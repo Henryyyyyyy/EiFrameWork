@@ -1,0 +1,6 @@
+ext.dependenceConfig = [
+        compileSdkVersion    : 26,
+        minSdkVersion        : 19,
+        targetSdkVersion     : 26,
+        supportLibraryVersion: "26.1.0"
+]
