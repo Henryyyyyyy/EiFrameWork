@@ -1,8 +1,12 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-
+apply plugin: 'kotlin-kapt'
 android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "me.zengjin.eiframework"
@@ -11,6 +15,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        android.compileOptions.sourceCompatibility 1.8
+        android.compileOptions.targetCompatibility 1.8
+
     }
     buildTypes {
         release {
@@ -36,4 +43,22 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     annotationProcessor project(':EiProcessor')
     implementation project(':EiAnnotations')
+    implementation project(':module_video')
 }
+task real{
+    doLast{
+        println "realrealreal"
+    }
+
+}
+task faker(dependsOn: [real]){
+    def qwe='aaa'
+    println "this is content${qwe}"
+    doLast{
+        println '打印在后'
+    }
+    doFirst(){
+        println '打印在前'
+    }
+}
+

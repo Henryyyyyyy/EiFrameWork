@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/EiProcessor" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base_framework" />
+            <option value="$PROJECT_DIR$/module_video" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

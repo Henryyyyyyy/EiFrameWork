@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/EiProcessor/EiProcessor.iml" filepath="$PROJECT_DIR$/EiProcessor/EiProcessor.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base_framework/base_framework.iml" filepath="$PROJECT_DIR$/base_framework/base_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_video/module_video.iml" filepath="$PROJECT_DIR$/module_video/module_video.iml" />
     </modules>
   </component>
 </project>
